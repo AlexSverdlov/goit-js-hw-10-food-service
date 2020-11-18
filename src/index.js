@@ -2,12 +2,10 @@ import './styles.css';
 import itemsTemplate from './templates/galery-items.hbs';
 import menus from './menu.json';
 
+// Вставляем шаблон в список
 const markup = itemsTemplate(menus);
 const ulGlobalRef = document.querySelector('.js-menu') 
-
 ulGlobalRef.insertAdjacentHTML('beforeend',markup)
-
- console.log(markup);
 
 
 const Theme = {
